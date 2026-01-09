@@ -1,11 +1,11 @@
 # Manual de instalación y ejecución del proyecto.
 
-1. Requisitos.
+**1. Requisitos.**
 
 -     Python: 3.8 o superior.
 -     GPU: NVIDIA con soporte CUDA.
 
-2.  Instalación de dependencias.
+**2.  Instalación de dependencias.**
     Se recomienda crear un entorno virtual para aislar las dependencias necesarias a instalar.
 
     1. Instalar paquetes necesarios:
@@ -14,7 +14,7 @@
 
     **Nota**: El archivo `requirements.txt` incluye PyTorch con soporte CUDA 11.8. Si necesitas otra versión de CUDA o solo CPU, ajusta el archivo `requirements.txt` según tu sistema.
 
-3.  Descarga y preparación del dataset.
+**3.  Descarga y preparación del dataset.**
 
     1. Descargar características I3D. Descargar el dataset UCF-Crime (características I3D extraídas) desde: [link al dataset](https://stuxidianeducn-my.sharepoint.com/personal/pengwu_stu_xidian_edu_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpengwu%5Fstu%5Fxidian%5Fedu%5Fcn%2FDocuments%2FUCF%2DCrime%2FI3D&ga=1)
 
@@ -22,7 +22,7 @@
 
     ![alt text](data.png)
 
-4.  Estructura del proyecto.
+**4.  Estructura del proyecto.**
     Archivos principales:
 
         - main.py: Script principal para el entrenamiento del modelo.
@@ -40,7 +40,7 @@
         * ucf-i3d.train.list: Lista de videos de entrenamiento.
         * ucf-i3d.test.list: Lista de videos de prueba
 
-5.  Entrenamiento del modelo.
+**5.  Entrenamiento del modelo.**
 
     1. Entrenamiento básico:
        `python main.py`
@@ -57,7 +57,7 @@
        - Tiempo estimado restante.
        - El modelo se guarda automáticamente en ckpt/[model_name].pkl
 
-6.  Evaluación del modelo.
+**6.  Evaluación del modelo.**
 
     1. Evaluar el modelo entrenado:
        `python test.py`
